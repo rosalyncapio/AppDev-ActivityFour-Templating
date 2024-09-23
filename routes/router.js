@@ -5,9 +5,13 @@ const musicplayer = require("../controller/musicplayer");
 
 
 router.get('/',musicplayer.index);
-router.get('/music/trending',musicplayer.trending);
-router.get('/music/new_release',musicplayer.new_release);
-router.get('/music/playlist',musicplayer.playlist);
-router.get('/music/artist',musicplayer.artist);
+router.get('/music/about',musicplayer.about);
+router.get('/music/discography',musicplayer.discography);
+router.get('/music/tours',musicplayer.tours);
+router.get('/music/blog',musicplayer.blog);
+router.get('/music/blogdetails',musicplayer.blogdetails);
+router.get('/music/videos',musicplayer.videos);
+router.get('/music/contact',musicplayer.contact);
+
 
 module.exports = router;

@@ -1,19 +1,28 @@
 const musicplayer = {
     index: (req, res) => {
-        res.render('home');
+        res.render('home',{title: 'MusicPlayer'});
     },
-    trending: (req, res) => {
-        res.render('trending');
+    about: (req, res) => {
+        res.render('about',{title: 'MusicPlayer'});
     },
-    new_release: (req, res) => {
-        res.render('new_release');
+    discography: (req, res) => {
+        res.render('discography',{title: 'MusicPlayer'});
     },
-    playlist: (req, res) => {
-        res.render('playlist');
+    tours: (req, res) => {
+        res.render('tours',{title: 'MusicPlayer'});
     },
-    artist: (req, res) => {
-        res.render('artist');
+    videos: (req, res) => {
+        res.render('videos',{title: 'MusicPlayer'});
     },
+    blog: (req, res) => {
+        res.render('blog',{title: 'MusicPlayer'});
+    },
+    blogdetails: (req, res) => {
+        res.render('blogdetails',{title: 'MusicPlayer'});
+    },
+    contact: (req, res) => {
+        res.render('contact',{title: 'MusicPlayer'});
+    }
     
-}
+};
 module.exports = musicplayer;
